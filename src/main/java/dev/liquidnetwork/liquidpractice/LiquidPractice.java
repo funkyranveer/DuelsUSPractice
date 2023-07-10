@@ -200,7 +200,7 @@ public class LiquidPractice extends JavaPlugin {
             logger("            &4&lMongo Internal Error");
             logger("        &cMongo is not setup correctly!");
             logger(     "&cPlease check your mongo and try again.");
-            logger("              &4&lDisabling LiquidPractice");
+            logger("              &4&lDisabling Practice");
             logger(CC.CHAT_BAR);
             this.shutDown();
             return;
@@ -219,7 +219,7 @@ public class LiquidPractice extends JavaPlugin {
             logger("       &cError Loading Kits: &cYAML Error");
             logger("    &cThis means your configuration was wrong.");
             logger("  &cPlease check your Kits config and try again!");
-            logger("               &4&lDisabling LiquidPractice");
+            logger("               &4&lDisabling Practice");
             logger(CC.CHAT_BAR);
             this.shutDown();
             return;
@@ -232,7 +232,7 @@ public class LiquidPractice extends JavaPlugin {
             logger("      &cError Loading Kits: &cYAML Error");
             logger("   &cThis means your configuration was wrong.");
             logger(" &cPlease check your Arenas config and try again!");
-            logger("              &4&lDisabling LiquidPractice");
+            logger("              &4&lDisabling Practice");
             logger(CC.CHAT_BAR);
             this.shutDown();
             return;
@@ -277,7 +277,7 @@ public class LiquidPractice extends JavaPlugin {
 
     public void shutDown() {
         this.onDisable();
-        logger("Shutting down LiquidPractice!");
+        logger("Shutting down Practice!");
         Bukkit.getPluginManager().disablePlugin(this);
     }
 }
