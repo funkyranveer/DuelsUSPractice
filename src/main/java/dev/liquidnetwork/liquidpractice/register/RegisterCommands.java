@@ -56,7 +56,6 @@ public class RegisterCommands {
                 new SaveCMD(),
                 new SaveDataCMD(),
                 new SaveKitsCMD(),
-                new PracticeCMD(),
                 new HCFCMD(),
                 new SpawnCMD(),
                 new ToggleScoreboardCMD(),

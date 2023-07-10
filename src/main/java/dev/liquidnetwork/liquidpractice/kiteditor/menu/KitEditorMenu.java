@@ -27,10 +27,9 @@ import java.util.Map;
 public class KitEditorMenu extends Menu {
 
     private static final int[] ITEM_POSITIONS = new int[]{
-            20, 21, 22, 23, 24, 25, 26, 29, 30, 31, 32, 33, 34, 35, 38, 39, 40, 41, 42, 43, 44, 47, 48, 49, 50, 51, 52,
-            53
+            18, 19, 20, 21, 22, 23, 24, 25
     };
-    private static final int[] BORDER_POSITIONS = new int[]{1, 9, 10, 11, 12, 13, 14, 15, 16, 17, 19, 28, 37, 46};
+    private static final int[] BORDER_POSITIONS = new int[]{9, 10, 11, 12, 13, 14, 15, 16, 17};
     private static final Button BORDER_BUTTON = Button.placeholder(Material.STAINED_GLASS_PANE, (byte) 8, " ");
 
     KitEditorMenu() {
@@ -51,20 +50,15 @@ public class KitEditorMenu extends Menu {
             buttons.put(border, BORDER_BUTTON);
         }
 
-        buttons.put(0, new CurrentKitButton());
-        buttons.put(2, new SaveButton());
-        buttons.put(6, new LoadDefaultKitButton());
-        buttons.put(7, new ClearInventoryButton());
-        buttons.put(8, new CancelButton());
+        buttons.put(2, new CurrentKitButton());
+        buttons.put(3, new SaveButton());
+        buttons.put(4, new LoadDefaultKitButton());
+        buttons.put(5, new ClearInventoryButton());
+        buttons.put(6, new CancelButton());
 
         Profile profile = Profile.getByUuid(player.getUniqueId());
         Kit kit = profile.getKitEditor().getSelectedKit();
         KitInventory kitInventory= profile.getKitEditor().getSelectedKitInventory();
-
-        buttons.put(18, new ArmorDisplayButton(kitInventory.getArmor()[3]));
-        buttons.put(27, new ArmorDisplayButton(kitInventory.getArmor()[2]));
-        buttons.put(36, new ArmorDisplayButton(kitInventory.getArmor()[1]));
-        buttons.put(45, new ArmorDisplayButton(kitInventory.getArmor()[0]));
 
         List<ItemStack> items = kit.getEditRules().getEditorItems();
 
@@ -109,24 +103,7 @@ public class KitEditorMenu extends Menu {
         }
     }
 
-    @AllArgsConstructor
-    private static class ArmorDisplayButton extends Button {
 
-        private final ItemStack itemStack;
-
-        @Override
-        public ItemStack getButtonItem(Player player) {
-            if (itemStack == null || itemStack.getType() == Material.AIR) {
-                return new ItemStack(Material.AIR);
-            }
-
-            return new ItemBuilder(itemStack.clone())
-                    .name(CC.AQUA + BukkitReflection.getItemStackName(itemStack))
-                    .lore(CC.GREEN + "This is automatically equipped.")
-                    .build();
-        }
-
-    }
 
     @AllArgsConstructor
     private static class CurrentKitButton extends Button {
@@ -147,8 +124,8 @@ public class KitEditorMenu extends Menu {
 
         @Override
         public ItemStack getButtonItem(Player player) {
-            return new ItemBuilder(Material.STAINED_CLAY)
-                    .durability(13)
+            return new ItemBuilder(Material.INK_SACK)
+                    .durability(14)
                     .name("&b&lClear Inventory")
                     .lore(Arrays.asList(
                             "&7This will clear your inventory",
@@ -176,8 +153,8 @@ public class KitEditorMenu extends Menu {
 
         @Override
         public ItemStack getButtonItem(Player player) {
-            return new ItemBuilder(Material.STAINED_CLAY)
-                    .durability(7)
+            return new ItemBuilder(Material.INK_SACK)
+                    .durability(11)
                     .name(CC.RED + CC.BOLD + "&bLoad default kit")
                     .lore(Arrays.asList(
                             CC.RED + "&7Click this to load the default kit",
@@ -209,8 +186,8 @@ public class KitEditorMenu extends Menu {
 
         @Override
         public ItemStack getButtonItem(Player player) {
-            return new ItemBuilder(Material.STAINED_CLAY)
-                    .durability(5)
+            return new ItemBuilder(Material.INK_SACK)
+                    .durability(10)
                     .name("&a&lSave")
                     .lore("&7Click this to save your kit.")
                     .build();
@@ -240,8 +217,8 @@ public class KitEditorMenu extends Menu {
 
         @Override
         public ItemStack getButtonItem(Player player) {
-            return new ItemBuilder(Material.STAINED_CLAY)
-                    .durability(14)
+            return new ItemBuilder(Material.INK_SACK)
+                    .durability(1)
                     .name("&b&lCancel")
                     .lore(Arrays.asList(
                             "&7Click this to abort editing your kit,",
