@@ -1,5 +1,6 @@
 package dev.liquidnetwork.liquidpractice.util.chat;
 
+import dev.liquidnetwork.liquidpractice.LiquidPractice;
 import org.apache.commons.lang3.StringUtils;
 import org.bukkit.ChatColor;
 
@@ -32,7 +33,7 @@ public class CC {
     public static final String PINK = ChatColor.LIGHT_PURPLE.toString();
     public static final String MENU_BAR = ChatColor.GRAY.toString() + ChatColor.STRIKETHROUGH.toString() + "------------------------";
     public static final String CHAT_BAR = ChatColor.translateAlternateColorCodes('&', "&b&m--------&7&m" + StringUtils.repeat("-", 37) + "&b&m--------");
-    public static final String SB_BAR = ChatColor.GRAY.toString() + ChatColor.STRIKETHROUGH.toString() + "----------------------";
+    public static final String SB_BAR = ChatColor.GRAY.toString() + ChatColor.STRIKETHROUGH.toString() + LiquidPractice.getInstance().getConfig().getString("SCOREBOARD.BAR");
 
     public static String translate(String in) {
         return ChatColor.translateAlternateColorCodes('&', in);

@@ -34,7 +34,7 @@ public class Scoreboard implements BoardAdapter {
 
     @Override
     public String getTitle(Player player) {
-        return "&b&NA Practice";
+        return LiquidPractice.getInstance().getConfig().getString("SCOREBOARD.HEADER");
     }
 
     @Override
@@ -50,7 +50,6 @@ public class Scoreboard implements BoardAdapter {
         if (profile.isInLobby() || profile.isInQueue()) {
             lines.add(CC.translate("&fOnline: &b" + LiquidPracticeCache.getOnline()));
             lines.add(CC.translate("&fIn Fights: &b" + LiquidPracticeCache.getInFights()));
-            lines.add("");
             if (profile.getParty() != null && Tournament.CURRENT_TOURNAMENT == null) {
                 final Party party=profile.getParty();
                 lines.add("");
@@ -67,8 +66,7 @@ public class Scoreboard implements BoardAdapter {
             if (profile.isInQueue()) {
                 final Queue queue=profile.getQueue();
                 lines.add(CC.SB_BAR);
-                lines.add("&b" + queue.getQueueName());
-                lines.add("&fDuration: &b" + queue.getDuration(player));
+                lines.add("&7Queued: " + "&b" + queue.getQueueName());
                 if (queue.getQueueType().equals(QueueType.RANKED)) {
                     lines.add("&fRange: &b" + profile.getQueueProfile().getMinRange() + " -> " + profile.getQueueProfile().getMaxRange());
                 }
@@ -512,7 +510,7 @@ public class Scoreboard implements BoardAdapter {
             lines.add(" &7&lSilent Mode");
         }
         lines.add("");
-        lines.add(CC.translate("&7&oduels.us"));
+        lines.add(CC.translate(LiquidPractice.getInstance().getConfig().getString("SCOREBOARD.FOOTER")));
         lines.add(CC.SB_BAR);
         return lines;
     }

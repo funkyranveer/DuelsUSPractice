@@ -106,6 +106,7 @@ public class LiquidPractice extends JavaPlugin {
         LiquidPractice = this;
         random = new Random();
         honcho = new Honcho(this);
+        saveDefaultConfig();
 
         // Setup All Configs
         mainConfig = new BasicConfigurationFile(this, "config");
@@ -114,27 +115,6 @@ public class LiquidPractice extends JavaPlugin {
         eventsConfig = new BasicConfigurationFile(this, "events");
         messagesConfig = new BasicConfigurationFile(this, "messages");
 
-        // To Prevent Stealing and Renaming (Skidding)
-        if (!Description.getAuthor().contains("Yzzird") && !Description.getAuthor().contains("Toples")) {
-            logger("------------------------------------------------");
-            logger("&cYou edited the plugin.yml, please don't do that");
-            logger( "&cPlease check your plugin.yml and try again.");
-            logger("            &cDisabling LiquidPractice");
-            logger("------------------------------------------------");
-            Bukkit.getPluginManager().disablePlugin(this);
-            return;
-        }
-
-        // To Prevent Stealing and Renaming (Skidding)
-        if (!Description.getName().contains("LiquidPractice")) {
-            logger("------------------------------------------------");
-            logger("&cYou edited the plugin.yml, please don't do that");
-            logger(" &cPlease check your plugin.yml and try again.");
-            logger("            &cDisabling LiquidPractice");
-            logger("------------------------------------------------");
-            Bukkit.getPluginManager().disablePlugin(this);
-            return;
-        }
         if (this.mainConfig.getBoolean("Performance-mode")) {
             TaskUtil.runAsync(() -> {
             registerAll();

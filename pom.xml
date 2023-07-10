@@ -5,25 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>dev.liquidnetwork.liquidpractice</groupId>
-    <artifactId>LiquidPractice</artifactId>
+    <artifactId>Practice</artifactId>
     <version>1.0.0</version>
-
-    <developers>
-        <developer>
-            <name>Yzzird</name>
-            <roles>
-                <role>Author</role>
-            </roles>
-        </developer>
-
-        <developer>
-            <name>Toples</name>
-            <roles>
-                <role>Maintainer</role>
-                <role>Developer</role>
-            </roles>
-        </developer>
-    </developers>
 
     <!-- Repositories -->
 

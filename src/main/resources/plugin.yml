@@ -1,7 +1,6 @@
-name: LiquidPractice
+name: Practice
 main: dev.liquidnetwork.liquidpractice.LiquidPractice
 version: ${project.version}
-authors: ["Yzzird", "Toples"]
 depend:
   - ProtocolLib
 softdepend:
