@@ -24,10 +24,12 @@ import dev.liquidnetwork.liquidpractice.profile.menu.PlayerMenu;
 import dev.liquidnetwork.liquidpractice.settings.SettingsMenu;
 import dev.liquidnetwork.liquidpractice.util.chat.CC;
 import dev.liquidnetwork.liquidpractice.util.config.BasicConfigurationFile;
+import org.bukkit.GameMode;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
+import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 import dev.liquidnetwork.liquidpractice.util.PlayerUtil;
 
@@ -322,6 +324,13 @@ public class HotbarListener implements Listener
                 }
                 default: {}
             }
+        }
+    }
+    @EventHandler
+    public void onClickInv(InventoryClickEvent event) {
+            if (Profile.getByUuid(event.getWhoClicked().getUniqueId()).getState() == ProfileState.IN_LOBBY) {
+                event.setCancelled(true);
+
         }
     }
 }
