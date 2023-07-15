@@ -85,12 +85,12 @@ public class Scoreboard implements BoardAdapter {
                 if (match.isSoloMatch()) {
                     final TeamPlayer self=match.getTeamPlayer(player);
                     final TeamPlayer opponent=match.getOpponentTeamPlayer(player);
-                    lines.add("&fEnemy: &b" + opponent.getUsername());
-                    lines.add("&fDuration: &b" + match.getDuration());
+                    lines.add("&bOpponent: &f" + opponent.getUsername());
+                    lines.add("&bDuration: &f" + match.getDuration());
                     if (profile.getSettings().isPingScoreboard()) {
                         lines.add("");
-                        lines.add("&fYour Ping: &b" + self.getPing() + "ms");
-                        lines.add("&fEnemy Ping: &b" + opponent.getPing() + "ms");
+                        lines.add("&aYour Ping: &f" + self.getPing() + "ms");
+                        lines.add("&cEnemy Ping: &f" + opponent.getPing() + "ms");
                     }
                 } else if (match.isSumoMatch()) {
                     TeamPlayer self=match.getTeamPlayer(player);
@@ -101,11 +101,11 @@ public class Scoreboard implements BoardAdapter {
                     int selfPoints=profile.getSumoRounds();
                     int opPoints=targetProfile.getSumoRounds();
 
-                    lines.add("&fEnemy: &b" + opponent.getUsername());
-                    lines.add("&fPoints: &b" + selfPoints + " &7┃ &b" + opPoints + "");
+                    lines.add("&bOpponent: &f" + opponent.getUsername());
+                    lines.add("&bPoints: &f" + selfPoints + " &7┃ &f" + opPoints + "");
                     lines.add("");
-                    lines.add("&fYour Ping: &b" + self.getPing() + "ms");
-                    lines.add("&fEnemy Ping: &b" + opponent.getPing() + "ms");
+                    lines.add("&aYour Ping: &f" + self.getPing() + "ms");
+                    lines.add("&cEnemy Ping: &f" + opponent.getPing() + "ms");
                 } else if (match.isTheBridgeMatch()) {
                     TeamPlayer self=match.getTeamPlayer(player);
                     TeamPlayer opponent=match.getOpponentTeamPlayer(player);
@@ -115,11 +115,11 @@ public class Scoreboard implements BoardAdapter {
                     int selfPoints=profile.getBridgeRounds();
                     int opPoints=targetProfile.getBridgeRounds();
 
-                    lines.add("&fEnemy: &b" + opponent.getUsername());
-                    lines.add("&fPoints: &b" + selfPoints + " &7┃ &b" + opPoints + "");
+                    lines.add("&bOpponent: &f" + opponent.getUsername());
+                    lines.add("&bPoints: &f" + selfPoints + " &7┃ &f" + opPoints + "");
                     lines.add("");
-                    lines.add("&fYour Ping: &b" + self.getPing() + "ms");
-                    lines.add("&fEnemy Ping: &b" + opponent.getPing() + "ms");
+                    lines.add("&aYour Ping: &f" + self.getPing() + "ms");
+                    lines.add("&cEnemy Ping: &f" + opponent.getPing() + "ms");
                 } else if (match.isSumoTeamMatch()) {
                     Team team=match.getTeam(player);
                     Team opponentTeam=match.getOpponentTeam(player);
@@ -131,38 +131,38 @@ public class Scoreboard implements BoardAdapter {
                         int selfPoints=self.getSumoRounds();
                         int opPoints=opponent.getSumoRounds();
 
-                        lines.add("&fEnemy: &b" + opponent.getLeader().getUsername() + "'s Party");
-                        lines.add("&fPoints: &b" + selfPoints + " &7┃ &b" + opPoints + "");
+                        lines.add("&bOpponent: &f" + opponent.getLeader().getUsername() + "'s Party");
+                        lines.add("&bPoints: &f" + selfPoints + " &7┃ &f" + opPoints + "");
                         lines.add("");
-                        lines.add("&fYour Ping: &b" + PlayerUtil.getPing(player) + "ms");
-                        lines.add("&fEnemy Ping: &b" + opponent.getTeamPlayers().get(0).getPing() + "ms");
+                        lines.add("&aYour Ping: &f" + PlayerUtil.getPing(player) + "ms");
+                        lines.add("&cEnemy Ping: &f" + opponent.getTeamPlayers().get(0).getPing() + "ms");
                     } else {
                         int selfPoints=team.getSumoRounds();
                         int opPoints=opponentTeam.getSumoRounds();
 
-                        lines.add(" &fYour Team: &b" + team.getAliveCount() + "/" + team.getTeamPlayers().size());
-                        lines.add(" &fEnemy Team: &b" + opponentTeam.getAliveCount() + "/" + opponentTeam.getTeamPlayers().size());
-                        lines.add(" &fPoints: &b" + selfPoints + " &f┃ &b" + opPoints);
+                        lines.add(" &bYour Team: &f" + team.getAliveCount() + "/" + team.getTeamPlayers().size());
+                        lines.add(" &bEnemy Team: &f" + opponentTeam.getAliveCount() + "/" + opponentTeam.getTeamPlayers().size());
+                        lines.add(" &bPoints: &f" + selfPoints + " &7┃ &f" + opPoints);
                     }
 
                 } else if (match.isTeamMatch() || match.isHCFMatch()) {
                     final Team team=match.getTeam(player);
                     final Team opponentTeam=match.getOpponentTeam(player);
-                    lines.add("&fDuration: &b" + match.getDuration());
-                    lines.add("&fYour Team: &a" + team.getAliveCount() + "/" + team.getTeamPlayers().size());
-                    lines.add("&fEnemy Team: &c" + opponentTeam.getAliveCount() + "/" + opponentTeam.getTeamPlayers().size());
+                    lines.add("&bDuration: &f" + match.getDuration());
+                    lines.add("&bYour Team: &a" + team.getAliveCount() + "/" + team.getTeamPlayers().size());
+                    lines.add("&bEnemy Team: &c" + opponentTeam.getAliveCount() + "/" + opponentTeam.getTeamPlayers().size());
 
                     if (match.isHCFMatch()) {
                         final HCFClasses pvpClass= LiquidPractice.getInstance().getHCFManager().getEquippedClass(player);
                         if (pvpClass instanceof Bard) {
                             final Bard bardClass=(Bard) pvpClass;
-                            lines.add("&fBard Energy: &b" + bardClass.getEnergy(player));
+                            lines.add("&bBard Energy: &f" + bardClass.getEnergy(player));
                         }
                     }
                 } else if (match.isFreeForAllMatch()) {
                     final Team team=match.getTeam(player);
-                    lines.add("&fPlayers: &b" + team.getAliveCount() + "/" + team.getTeamPlayers().size());
-                    lines.add("&fDuration: &b" + match.getDuration());
+                    lines.add("&bPlayers: &f" + team.getAliveCount() + "/" + team.getTeamPlayers().size());
+                    lines.add("&bDuration: &f" + match.getDuration());
                 }
             }
         } else if (profile.isSpectating()) {
@@ -175,9 +175,9 @@ public class Scoreboard implements BoardAdapter {
             final Wizard wizard=profile.getWizard();
             if (match != null) {
                 if (!match.isHCFMatch()) {
-                    lines.add("&fKit: &b" + match.getKit().getName());
+                    lines.add("&bKit: &f" + match.getKit().getName());
                 }
-                lines.add("&fDuration: &b" + match.getDuration());
+                lines.add("&bDuration: &f" + match.getDuration());
                 lines.add("");
                 if (match.isSoloMatch() || match.isSumoMatch() || match.isTheBridgeMatch()) {
                     int playera=PlayerUtil.getPing(match.getTeamPlayerA().getPlayer());
