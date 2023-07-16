@@ -21,7 +21,7 @@ public class Placeholders extends PlaceholderExpansion {
 
     @Override
     public String getAuthor() {
-        return "Yzzird & Toples";
+        return "funkyranveer & lrxh";
     }
 
     @Override
@@ -37,7 +37,6 @@ public class Placeholders extends PlaceholderExpansion {
         Profile profile = Profile.getByUuid(player);
 
         /**
-         * [Originally coded by Yzzird and designed/modificated by Toples]
          * This placeholder is used to display the viewer's rank
          * name from the Core-Hook.
          *
@@ -63,7 +62,6 @@ public class Placeholders extends PlaceholderExpansion {
         }
 
         /**
-         * [Originally coded by Yzzird and designed/modificated by Toples]
          * This placeholder is used to display the viewer's elo
          * for a certain kit mentioned in the identifier.
          *
@@ -79,7 +77,6 @@ public class Placeholders extends PlaceholderExpansion {
         }
 
         /**
-         * [Originally coded by Yzzird and designed/modificated by Toples]
          * This placeholder is used to display the viewer's elo
          * for a certain kit mentioned in the identifier.
          *
@@ -97,7 +94,6 @@ public class Placeholders extends PlaceholderExpansion {
         }
 
         /**
-         * [Originally coded by Yzzird and designed/modificated by Toples]
          * This placeholder is used to display the viewer's elo
          * for a certain kit mentioned in the identifier.
          *
@@ -116,7 +112,6 @@ public class Placeholders extends PlaceholderExpansion {
         }
 
         /**
-         * [Originally coded by Yzzird and designed/modificated by Toples]
          * This placeholder is used to display a player's elo
          * for a certain kit mentioned in the identifier.
          *

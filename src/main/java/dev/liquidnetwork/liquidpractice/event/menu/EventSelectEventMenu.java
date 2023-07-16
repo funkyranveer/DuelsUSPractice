@@ -1,5 +1,6 @@
 package dev.liquidnetwork.liquidpractice.event.menu;
 
+import dev.liquidnetwork.liquidpractice.LiquidPractice;
 import dev.liquidnetwork.liquidpractice.enums.EventType;
 import dev.liquidnetwork.liquidpractice.event.types.parkour.command.ParkourHostCommand;
 import dev.liquidnetwork.liquidpractice.event.types.spleef.command.SpleefHostCommand;
@@ -142,7 +143,7 @@ public class EventSelectEventMenu extends Menu {
                             BracketsHostCommand.execute(player);
                         } else {
                             player.sendMessage(CC.translate("&7You do not have permission to execute this command."));
-                            player.sendMessage(CC.translate("&7&oPlease consider upgrading your Rank at &b&ostore.purgemc.club &7!"));
+                            player.sendMessage(CC.translate("&7&oPlease consider upgrading your Rank at&b&o " + LiquidPractice.getInstance().getConfig().getString("LINKS.STORE")));
                         }
                         break;
                     case "&b&lSumo":
@@ -150,7 +151,7 @@ public class EventSelectEventMenu extends Menu {
                             SumoHostCommand.execute(player);
                         } else {
                             player.sendMessage(CC.translate("&7You do not have permission to execute this command."));
-                            player.sendMessage(CC.translate("&7&oPlease consider upgrading your Rank at &b&ostore.purgemc.club &7!"));
+                            player.sendMessage(CC.translate("&7&oPlease consider upgrading your Rank at&b&o " + LiquidPractice.getInstance().getConfig().getString("LINKS.STORE")));
                         }
                         break;
                     case "&b&lLMS":
@@ -158,7 +159,7 @@ public class EventSelectEventMenu extends Menu {
                             LMSHostCommand.execute(player);
                         } else {
                             player.sendMessage(CC.translate("&7You do not have permission to execute this command."));
-                            player.sendMessage(CC.translate("&7&oPlease consider upgrading your Rank at &b&ostore.purgemc.club &7!"));
+                            player.sendMessage(CC.translate("&7&oPlease consider upgrading your Rank at&b&o " + LiquidPractice.getInstance().getConfig().getString("LINKS.STORE")));
                         }
                         break;
                     case "&b&lParkour":
@@ -166,7 +167,7 @@ public class EventSelectEventMenu extends Menu {
                             ParkourHostCommand.execute(player);
                         } else {
                             player.sendMessage(CC.translate("&7You do not have permission to execute this command."));
-                            player.sendMessage(CC.translate("&7&oPlease consider upgrading your Rank at &b&ostore.purgemc.club &7!"));
+                            player.sendMessage(CC.translate("&7&oPlease consider upgrading your Rank at&b&o " + LiquidPractice.getInstance().getConfig().getString("LINKS.STORE")));
                         }
                         break;
                     case "&b&lSpleef":
@@ -174,7 +175,7 @@ public class EventSelectEventMenu extends Menu {
                             SpleefHostCommand.execute(player);
                         } else {
                             player.sendMessage(CC.translate("&7You do not have permission to execute this command."));
-                            player.sendMessage(CC.translate("&7&oPlease consider upgrading your Rank at &b&ostore.purgemc.club &7!"));
+                            player.sendMessage(CC.translate("&7&oPlease consider upgrading your Rank at&b&o " + LiquidPractice.getInstance().getConfig().getString("LINKS.STORE")));
                         }
                         break;
                     case "&b&lWizard":
@@ -182,7 +183,7 @@ public class EventSelectEventMenu extends Menu {
                             WizardHostCommand.execute(player);
                         } else {
                             player.sendMessage(CC.translate("&7You do not have permission to execute this command."));
-                            player.sendMessage(CC.translate("&7&oPlease consider upgrading your Rank at &b&ostore.purgemc.club &7!"));
+                            player.sendMessage(CC.translate("&7&oPlease consider upgrading your Rank at&b&o " + LiquidPractice.getInstance().getConfig().getString("LINKS.STORE")));
                         }
                         break;
                     case "&c&lRunner":

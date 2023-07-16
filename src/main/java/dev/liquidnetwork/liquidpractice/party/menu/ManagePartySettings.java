@@ -2,6 +2,7 @@ package dev.liquidnetwork.liquidpractice.party.menu;
 
 import java.beans.ConstructorProperties;
 
+import dev.liquidnetwork.liquidpractice.LiquidPractice;
 import dev.liquidnetwork.liquidpractice.enums.PartyManageType;
 import dev.liquidnetwork.liquidpractice.enums.PartyPrivacyType;
 import dev.liquidnetwork.liquidpractice.util.external.ItemBuilder;
@@ -93,7 +94,7 @@ public class ManagePartySettings extends Menu
             }
             if (!player.hasPermission("liquidpractice.donator")) {
                 player.sendMessage(CC.translate("&7You do not have permission to use Party Settings."));
-                player.sendMessage(CC.translate("&7&oPlease consider buying a Rank at &b&ostore.purgemc.club &7!"));
+                player.sendMessage(CC.translate("&7&oPlease consider upgrading your Rank at&b&o " + LiquidPractice.getInstance().getConfig().getString("LINKS.STORE")));
                 Menu.currentlyOpenedMenus.get(player.getName()).setClosedByMenu(true);
                 player.closeInventory();
                 return;

@@ -1,5 +1,6 @@
 package dev.liquidnetwork.liquidpractice.settings;
 
+import dev.liquidnetwork.liquidpractice.LiquidPractice;
 import dev.liquidnetwork.liquidpractice.enums.SettingsType;
 import dev.liquidnetwork.liquidpractice.profile.Profile;
 import dev.liquidnetwork.liquidpractice.util.external.ItemBuilder;
@@ -167,7 +168,7 @@ public class SettingsMenu extends Menu
                     Button.playFail(player);
                     player.closeInventory();
                     player.sendMessage(CC.translate("&7You do not have permission to use this setting."));
-                    player.sendMessage(CC.translate("&7&oPlease consider buying a Rank at &b&ostore.purgemc.club &7!"));
+                    player.sendMessage(CC.translate("&7&oPlease consider upgrading your Rank at&b&o " + LiquidPractice.getInstance().getConfig().getString("LINKS.STORE")));
                 }
                     break;
                 case TOGGLEPINGONSCOREBOARD:
