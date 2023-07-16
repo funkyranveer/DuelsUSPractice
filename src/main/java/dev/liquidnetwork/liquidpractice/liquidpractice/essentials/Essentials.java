@@ -15,13 +15,13 @@ public class Essentials {
 
     public Essentials() {
 
-        spawn = LocationUtil.deserialize(LiquidPractice.getInstance().getMainConfig().getStringOrDefault("LiquidPractice.Spawn", null));
+        spawn = LocationUtil.deserialize(LiquidPractice.getInstance().getMainConfig().getStringOrDefault("Practice.Spawn", null));
     }
 
     public static void setSpawn(Location location) {
         spawn = location;
 
-        LiquidPractice.getInstance().getMainConfig().getConfiguration().set("LiquidPractice.Spawn", LocationUtil.serialize(spawn));
+        LiquidPractice.getInstance().getMainConfig().getConfiguration().set("Practice.Spawn", LocationUtil.serialize(spawn));
 
         try {
             LiquidPractice.getInstance().getMainConfig().getConfiguration().save(LiquidPractice.getInstance().getMainConfig().getFile());

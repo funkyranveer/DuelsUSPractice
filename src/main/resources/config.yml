@@ -1,9 +1,9 @@
 #############################################
 Mongo:
-  Database: LiquidPractice
-  URL: mongodb://127.0.0.1:27017/LiquidPractice
+  Database: Practice
+  URL: mongodb://127.0.0.1:27017/Practice
 #############################################
-LiquidPractice:
+Practice:
   Spawn: world:108.42862345557752:106.0:2.4753712094583005:-89.59775:0.17956273
   Performance-mode: true
   Core-Hook: true

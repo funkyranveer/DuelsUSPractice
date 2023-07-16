@@ -133,7 +133,7 @@ public class LiquidPractice extends JavaPlugin {
         wizardManager = new WizardManager();
         OITCManager = new OITCManager();
 
-        if (mainConfig.getBoolean("LiquidPractice.Core-Hook")) {
+        if (mainConfig.getBoolean("Practice.Core-Hook")) {
             // Core API Support
             rankSystem = new Rank();
         } else {
@@ -143,7 +143,7 @@ public class LiquidPractice extends JavaPlugin {
         this.effectRestorer = new EffectRestorer(this);
         this.HCFManager= new HCFManager(this);
 
-        if (mainConfig.getBoolean("LiquidPractice.HCF-Enabled")) {
+        if (mainConfig.getBoolean("Practice.HCF-Enabled")) {
             // Create HCF's Duel Kit
             this.hcfKit = new Kit("HCFTeamFight");
             this.hcfKit.setDisplayIcon(new ItemBuilder(Material.BEACON).clearEnchantments().clearFlags().build());
