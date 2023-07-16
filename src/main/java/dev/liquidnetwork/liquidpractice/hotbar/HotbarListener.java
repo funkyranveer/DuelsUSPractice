@@ -33,8 +33,7 @@ import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 import dev.liquidnetwork.liquidpractice.util.PlayerUtil;
 
-public class HotbarListener implements Listener
-{
+public class HotbarListener implements Listener {
 
     BasicConfigurationFile config = LiquidPractice.getInstance().getMessagesConfig();
 
@@ -43,7 +42,7 @@ public class HotbarListener implements Listener
         if (event.getItem() != null && event.getAction().name().contains("RIGHT")) {
             final Player player = event.getPlayer();
             final Profile profile = Profile.getByUuid(player.getUniqueId());
-            final HotbarType hotbarType= Hotbar.fromItemStack(event.getItem());
+            final HotbarType hotbarType = Hotbar.fromItemStack(event.getItem());
             if (hotbarType == null) {
                 return;
             }
@@ -53,7 +52,7 @@ public class HotbarListener implements Listener
                     if (!player.hasPermission("liquidpractice.donator")) {
                         if (LiquidPractice.getInstance().getMainConfig().getBoolean("Ranked.Require-Kills")) {
                             if (profile.getTotalWins() < LiquidPractice.getInstance().getMainConfig().getInteger("Ranked.Required-Kills")) {
-                                for ( String error : LiquidPractice.getInstance().getMessagesConfig().getStringList("Ranked.Required") ) {
+                                for (String error : LiquidPractice.getInstance().getMessagesConfig().getStringList("Ranked.Required")) {
                                     player.sendMessage(CC.translate(error));
                                 }
                                 break;
@@ -163,8 +162,8 @@ public class HotbarListener implements Listener
                     break;
                 }
                 case EVENT_JOIN: {
-                 new ActiveEventSelectEventMenu().openMenu(player);
-                 break;
+                    new ActiveEventSelectEventMenu().openMenu(player);
+                    break;
                 }
                 case SUMO_LEAVE: {
                     final Sumo activeSumo = LiquidPractice.getInstance().getSumoManager().getActiveSumo();
@@ -312,8 +311,7 @@ public class HotbarListener implements Listener
                     final ProfileRematchData profileRematchData = profile.getRematchData();
                     if (profileRematchData.isReceive()) {
                         profileRematchData.accept();
-                    }
-                    else {
+                    } else {
                         if (profileRematchData.isSent()) {
                             player.sendMessage(CC.RED + "You have already sent a rematch request to that player.");
                             return;
@@ -322,15 +320,24 @@ public class HotbarListener implements Listener
                     }
                     break;
                 }
-                default: {}
+                default: {
+                }
             }
         }
     }
+
+    /*
+     * Testing
+     */
+
     @EventHandler
     public void onClickInv(InventoryClickEvent event) {
-            if (Profile.getByUuid(event.getWhoClicked().getUniqueId()).getState() == ProfileState.IN_LOBBY) {
-                event.setCancelled(true);
-
+        if (Profile.getByUuid(event.getWhoClicked().getUniqueId()).getState() == ProfileState.IN_LOBBY) {
+            event.setCancelled(true); }
+        else {
+            if (Profile.getByUuid(event.getWhoClicked().getUniqueId()).getState() == ProfileState.IN_QUEUE) {
+                event.setCancelled(false);
+            }
         }
     }
 }
