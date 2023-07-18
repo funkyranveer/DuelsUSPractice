@@ -10,7 +10,7 @@ import org.bukkit.command.CommandSender;
 public class ArenaCommand {
     public void execute(final CommandSender player) {
         player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&b&m--------&7&m" + StringUtils.repeat("-", 37) + "&b&m--------"));
-        player.sendMessage(CC.translate( "&bLiquid&3Practice &7» Arena Commands"));
+        player.sendMessage(CC.translate( "&3Practice &7» Arena Commands"));
         player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&b&m--------&7&m" + StringUtils.repeat("-", 37) + "&b&m--------"));
         player.sendMessage(CC.translate(" &8• &b/arena create &8<&7name&8> &8<&7Shared|Standalone|TheBridge&8> &8- &8&o(&7&oCreate an Arena&8&o)"));
         player.sendMessage(CC.translate(" &8• &b/arena remove &8<&7name&8> &8- &8&o(&7&oDelete an Arena&8&o)"));

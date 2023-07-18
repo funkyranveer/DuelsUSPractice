@@ -12,7 +12,7 @@ public class ArenasCommand
 {
     public void execute(CommandSender player) {
         player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&b&m--------&7&m" + StringUtils.repeat("-", 37) + "&b&m--------"));
-        player.sendMessage(CC.translate( "&bLiquid&3Practice &7» All Arenas"));
+        player.sendMessage(CC.translate( "&3Practice &7» All Arenas"));
         player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&b&m--------&7&m" + StringUtils.repeat("-", 37) + "&b&m--------"));
         if (Arena.getArenas().isEmpty()) {
             player.sendMessage("");

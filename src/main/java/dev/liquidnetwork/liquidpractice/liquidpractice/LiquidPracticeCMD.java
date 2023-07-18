@@ -16,7 +16,7 @@ public class LiquidPracticeCMD {
     public void execute(Player p) {
         if (p.hasPermission("liquidpractice.staff")) {
             p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&b&m--------&7&m" + StringUtils.repeat("-", 37) + "&b&m--------"));
-            p.sendMessage(CC.translate("&bLiquidPractice &7» LiquidPractice Commands"));
+            p.sendMessage(CC.translate("&3Practice &7» LiquidPractice Commands"));
             p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&b&m--------&7&m" + StringUtils.repeat("-", 37) + "&b&m--------"));
             p.sendMessage(CC.translate(" &8• &b/liquidpractice setlobby &8- &8&o(&7&oSets the lobby to player's location&8&o)"));
             p.sendMessage(CC.translate(" &8• &b/liquidpractice savekits &8- &8&o(&7&oSave all Kits&8&o)"));

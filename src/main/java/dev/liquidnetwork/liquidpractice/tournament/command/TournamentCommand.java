@@ -10,7 +10,7 @@ import org.bukkit.entity.Player;
 public class TournamentCommand {
     public void execute(Player player) {
         player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&b&m--------&7&m" + StringUtils.repeat("-", 37) + "&b&m--------"));
-        player.sendMessage(CC.translate("&bLiquidPractice &7» Tournament Commands"));
+        player.sendMessage(CC.translate("&3Practice &7» Tournament Commands"));
         player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&b&m--------&7&m" + StringUtils.repeat("-", 37) + "&b&m--------"));
         player.sendMessage(CC.translate(" &8• &b/tournament list &8- &8&o(&7&oList Active Tournaments&8&o)"));
         player.sendMessage(CC.translate(" &8• &b/tournament host (team-size(1/2)) &8- &8&o(&7&oHost a tournament8&o)"));

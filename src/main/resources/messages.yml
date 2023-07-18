@@ -42,7 +42,7 @@ Ranked:
   Disabled: "&7Ranked has been disabled by an Admin!"
   Required:
    - "&7You need to win at least &b10 Unranked Matches &7 to queue Ranked!"
-   - "&7&oYou can bypass this limit by upgrading your rank at &b&ostore.liquidpvp.club"
+   - "&7&oYou can bypass this limit by upgrading your rank at &b&ostore.duels.us"
 Event:
   Sumo:
     Not-Active: "&cThere is no Active Sumo."

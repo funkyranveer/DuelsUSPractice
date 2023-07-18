@@ -18,7 +18,7 @@ public class KitBridgeCommand {
                 kit.getGameRules().setBridge(true);
             }
             kit.save();
-            player.sendMessage(CC.translate("&8[&b&lArray&8] &7Updated build mode for &b" + kit.getName() +  " &7to &b" + (kit.getGameRules().isBridge() ? "true!" : "false!")));
+            player.sendMessage(CC.translate("&7Updated build mode for &b" + kit.getName() +  " &7to &b" + (kit.getGameRules().isBridge() ? "true!" : "false!")));
         }
     }
 }

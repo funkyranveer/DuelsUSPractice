@@ -13,7 +13,7 @@ import org.bukkit.entity.Player;
 public class ArenaKitListCommand {
     public void execute(Player player, @CPL("arena") Arena arena) {
         player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&b&m--------&7&m" + StringUtils.repeat("-", 37) + "&b&m--------"));
-        player.sendMessage(CC.translate( "&bLiquid&3Practice &7» " + arena.getName() + "'s kits"));
+        player.sendMessage(CC.translate( "&3Practice &7» " + arena.getName() + "'s kits"));
         player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&b&m--------&7&m" + StringUtils.repeat("-", 37) + "&b&m--------"));
         for ( String string : arena.getKits() ) {
             Kit kit = Kit.getByName(string);

@@ -12,7 +12,7 @@ public class KitListCommand {
 
 	public void execute(CommandSender player) {
 		player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&b&m--------&7&m" + StringUtils.repeat("-", 37) + "&b&m--------"));
-		player.sendMessage(CC.translate("&bLiquidPractice &7» All Kits"));
+		player.sendMessage(CC.translate("&3Practice &7» All Kits"));
 		player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&b&m--------&7&m" + StringUtils.repeat("-", 37) + "&b&m--------"));
 		for ( Kit kit : Kit.getKits() ) {
 			if (kit == null) {

@@ -10,11 +10,11 @@ import org.bukkit.entity.Player;
 public class KitSetHitDelayCommand {
     public void execute(Player player, @CPL("kit") Kit kit, @CPL("delay") int delay) {
         if (kit == null) {
-            player.sendMessage(CC.translate("&8[&b&lArray&8] &7That kit does not exist."));
+            player.sendMessage(CC.translate("&7That kit does not exist."));
         } else {
             kit.getGameRules().setHitDelay(delay);
             kit.save();
-            player.sendMessage(CC.translate("&8[&b&lArray&8] &7Updated &b" + kit.getName() + " &7hitdelay set to &b" + delay));
+            player.sendMessage(CC.translate("&7Updated &b" + kit.getName() + " &7hitdelay set to &b" + delay));
         }
     }
 }

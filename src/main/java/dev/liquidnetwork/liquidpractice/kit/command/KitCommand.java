@@ -10,7 +10,7 @@ import org.bukkit.command.CommandSender;
 public class KitCommand {
     public void execute(final CommandSender player) {
         player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&b&m--------&7&m" + StringUtils.repeat("-", 37) + "&b&m--------"));
-        player.sendMessage(CC.translate( "&bLiquidPractice &7» Kit Commands"));
+        player.sendMessage(CC.translate( "&3Practice &7» Kit Commands"));
         player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&b&m--------&7&m" + StringUtils.repeat("-", 37) + "&b&m--------"));
         player.sendMessage(CC.translate(" &8• &b/kit create &8<&7kit&8> &8- &8&o(&7&oCreate a Kit&8&o)"));
         player.sendMessage(CC.translate(" &8• &b/kit setkb &8<&7kit&8> &8- &8&o(&7&oSet a Kit's Knockback Profile&8&o)"));

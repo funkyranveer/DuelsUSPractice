@@ -10,7 +10,7 @@ import org.bukkit.entity.Player;
 public class EventHelpCommand {
     public void execute(Player player) {
         player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&b&m--------&7&m" + StringUtils.repeat("-", 37) + "&b&m--------"));
-        player.sendMessage(CC.translate( "&bLiquidPractice &7» Event Commands"));
+        player.sendMessage(CC.translate( "&3Practice &7» Event Commands"));
         player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&b&m--------&7&m" + StringUtils.repeat("-", 37) + "&b&m--------"));
         player.sendMessage(CC.translate(" &8• &b/host &8- &8&o(&7&oOpen Events Menu&8&o)"));
         player.sendMessage(CC.translate(" &8• &b/brackets &8- &8&o(&7&oView Bracket Commands&8&o)"));

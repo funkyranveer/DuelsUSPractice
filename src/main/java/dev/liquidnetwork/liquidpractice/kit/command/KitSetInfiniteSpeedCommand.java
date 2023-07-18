@@ -10,7 +10,7 @@ import org.bukkit.entity.Player;
 public class KitSetInfiniteSpeedCommand {
     public void execute(Player player, @CPL("kit") Kit kit) {
         if (kit == null) {
-            player.sendMessage(CC.translate("&8[&b&lArray&8] &7That kit does not exist."));
+            player.sendMessage(CC.translate("&7That kit does not exist."));
         } else {
             if (kit.getGameRules().isInfinitespeed()) {
                 kit.getGameRules().setInfinitespeed(false);
@@ -18,7 +18,7 @@ public class KitSetInfiniteSpeedCommand {
                 kit.getGameRules().setInfinitespeed(true);
             }
             kit.save();
-            player.sendMessage(CC.translate("&8[&b&lArray&8] &7Updated infinite-speed mode for &b" + kit.getName() +  " &7to &b" + (kit.getGameRules().isInfinitespeed() ? "true!" : "false!")));
+            player.sendMessage(CC.translate("&7Updated infinite-speed mode for &b" + kit.getName() +  " &7to &b" + (kit.getGameRules().isInfinitespeed() ? "true!" : "false!")));
         }
     }
 }
