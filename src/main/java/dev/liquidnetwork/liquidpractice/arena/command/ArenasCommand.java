@@ -7,7 +7,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 
-@CommandMeta(label = { "arenas", "arena list" }, permission = "liquidpractice.admin")
+@CommandMeta(label = { "arenas", "arena list" }, permission = "practice.admin")
 public class ArenasCommand
 {
     public void execute(CommandSender player) {

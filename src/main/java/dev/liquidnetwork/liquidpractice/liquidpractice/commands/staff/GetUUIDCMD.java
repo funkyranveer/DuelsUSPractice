@@ -8,7 +8,7 @@ import org.bukkit.entity.Player;
 
 import java.util.UUID;
 
-@CommandMeta(label="uuid", permission="liquidpractice.admin")
+@CommandMeta(label="uuid", permission="practice.admin")
 public class GetUUIDCMD {
     public void execute(Player player, @CPL("name") String name) {
         UUID uuid = LiquidPracticeCache.getUUID(name);

@@ -92,7 +92,7 @@ public class ManagePartySettings extends Menu
                 player.closeInventory();
                 return;
             }
-            if (!player.hasPermission("liquidpractice.donator")) {
+            if (!player.hasPermission("practice.donator")) {
                 player.sendMessage(CC.translate("&7You do not have permission to use Party Settings."));
                 player.sendMessage(CC.translate("&7&oPlease consider upgrading your Rank at&b&o " + LiquidPractice.getInstance().getConfig().getString("LINKS.STORE")));
                 Menu.currentlyOpenedMenus.get(player.getName()).setClosedByMenu(true);

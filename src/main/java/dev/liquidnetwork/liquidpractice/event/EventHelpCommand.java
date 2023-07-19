@@ -6,7 +6,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 
-@CommandMeta(label = {"event", "event help"}, permission = "liquidpractice.admin")
+@CommandMeta(label = {"event", "event help"}, permission = "practice.admin")
 public class EventHelpCommand {
     public void execute(Player player) {
         player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&b&m--------&7&m" + StringUtils.repeat("-", 37) + "&b&m--------"));

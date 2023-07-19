@@ -7,7 +7,7 @@ import dev.liquidnetwork.liquidpractice.util.chat.CC;
 import dev.liquidnetwork.liquidpractice.util.command.command.CommandMeta;
 import org.bukkit.entity.Player;
 
-@CommandMeta(label = { "wizard host" }, permission = "liquidPractice.host.wizard")
+@CommandMeta(label = { "wizard host" }, permission = "Practice.host.wizard")
 public class WizardHostCommand {
 
 	public static void execute(Player player) {

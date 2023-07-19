@@ -9,7 +9,7 @@ import org.bukkit.potion.PotionEffect;
 import java.util.ArrayList;
 import java.util.List;
 
-@CommandMeta(label = {"kit setinv", "kit setinventory"}, permission = "liquidpractice.admin")
+@CommandMeta(label = {"kit setinv", "kit setinventory"}, permission = "practice.admin")
 public class KitSetInvCommand {
 
     public void execute(Player player, Kit kit) {

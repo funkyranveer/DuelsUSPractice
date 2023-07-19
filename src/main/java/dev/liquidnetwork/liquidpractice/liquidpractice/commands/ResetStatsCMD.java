@@ -8,7 +8,7 @@ import dev.liquidnetwork.liquidpractice.util.command.command.CommandMeta;
 import org.bson.Document;
 import org.bukkit.entity.Player;
 
-@CommandMeta(label={"liquidpractice reset", "liquidpractice resetstats"}, permission="liquidpractice.admin")
+@CommandMeta(label={"practice reset", "practice resetstats"}, permission="practice.admin")
 public class ResetStatsCMD {
     public void execute(Player p, @CPL("profile") String name) {
         if (name == null) {

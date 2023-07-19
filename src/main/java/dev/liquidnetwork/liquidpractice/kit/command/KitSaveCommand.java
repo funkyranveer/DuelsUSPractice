@@ -5,7 +5,7 @@ import dev.liquidnetwork.liquidpractice.util.chat.CC;
 import dev.liquidnetwork.liquidpractice.util.command.command.CommandMeta;
 import org.bukkit.command.CommandSender;
 
-@CommandMeta(label = "kit save", permission = "liquidpractice.admin")
+@CommandMeta(label = "kit save", permission = "practice.admin")
 public class KitSaveCommand {
 
     public void execute(CommandSender sender) {

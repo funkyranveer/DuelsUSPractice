@@ -8,7 +8,7 @@ import dev.liquidnetwork.liquidpractice.util.command.command.CPL;
 import dev.liquidnetwork.liquidpractice.util.command.command.CommandMeta;
 import org.bukkit.entity.Player;
 
-@CommandMeta(label="liquidpractice setelo", permission="liquidpractice.admin")
+@CommandMeta(label="practice setelo", permission="practice.admin")
 public class SetEloCMD {
     public void execute(Player player, @CPL("profile") String name, @CPL("[global|kit]") String type, @CPL("amount") String inter ) {
         Player target= PlayerUtil.getPlayer(name);

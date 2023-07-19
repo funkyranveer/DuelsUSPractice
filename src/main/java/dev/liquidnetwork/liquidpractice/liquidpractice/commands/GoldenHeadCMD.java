@@ -6,7 +6,7 @@ import dev.liquidnetwork.liquidpractice.util.command.command.CPL;
 import dev.liquidnetwork.liquidpractice.util.command.command.CommandMeta;
 import org.bukkit.entity.Player;
 
-@CommandMeta(label={"liquidpractice goldenhead"}, permission="liquidpractice.admin")
+@CommandMeta(label={"practice goldenhead"}, permission="practice.admin")
 public class GoldenHeadCMD {
     public void execute(Player p, @CPL("[normal|bridge]") String type) {
         if (type.equalsIgnoreCase("bridge")) {

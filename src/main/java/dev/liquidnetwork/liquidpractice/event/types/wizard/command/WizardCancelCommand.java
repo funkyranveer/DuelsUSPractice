@@ -5,7 +5,7 @@ import dev.liquidnetwork.liquidpractice.util.chat.CC;
 import dev.liquidnetwork.liquidpractice.util.command.command.CommandMeta;
 import org.bukkit.command.CommandSender;
 
-@CommandMeta(label = "wizard cancel", permission = "liquidpractice.staff")
+@CommandMeta(label = "wizard cancel", permission = "practice.staff")
 public class WizardCancelCommand {
 
 	public void execute(CommandSender sender) {

@@ -5,7 +5,7 @@ import dev.liquidnetwork.liquidpractice.util.chat.CC;
 import dev.liquidnetwork.liquidpractice.util.command.command.CommandMeta;
 import org.bukkit.entity.Player;
 
-@CommandMeta(label = "spleef tp", permission = "liquidpractice.staff")
+@CommandMeta(label = "spleef tp", permission = "practice.staff")
 public class SpleefTpCommand {
 
 	public void execute(Player player) {

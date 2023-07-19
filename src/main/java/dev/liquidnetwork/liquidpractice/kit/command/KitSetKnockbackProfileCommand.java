@@ -6,7 +6,7 @@ import dev.liquidnetwork.liquidpractice.util.command.command.CPL;
 import dev.liquidnetwork.liquidpractice.util.command.command.CommandMeta;
 import org.bukkit.entity.Player;
 
-@CommandMeta(label = {"kit setkb", "kit setknockback"}, permission = "liquidpractice.admin")
+@CommandMeta(label = {"kit setkb", "kit setknockback"}, permission = "practice.admin")
 public class KitSetKnockbackProfileCommand {
 
     public void execute(Player player, Kit kit, @CPL("KnockbackProfile") String knockbackProfile) {

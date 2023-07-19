@@ -6,7 +6,7 @@ import dev.liquidnetwork.liquidpractice.util.command.command.CPL;
 import dev.liquidnetwork.liquidpractice.util.command.command.CommandMeta;
 import org.bukkit.entity.Player;
 
-@CommandMeta(label={"kit timed"}, permission = "liquidpractice.admin")
+@CommandMeta(label={"kit timed"}, permission = "practice.admin")
 public class KitTimedCommand {
     public void execute(Player player, @CPL("kit") Kit kit) {
         if (kit == null) {

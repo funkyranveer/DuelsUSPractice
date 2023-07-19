@@ -8,7 +8,7 @@ import dev.liquidnetwork.liquidpractice.util.command.command.CPL;
 import dev.liquidnetwork.liquidpractice.util.command.command.CommandMeta;
 import org.bukkit.entity.Player;
 
-@CommandMeta(label = "arena addkit", permission = "liquidpractice.admin")
+@CommandMeta(label = "arena addkit", permission = "practice.admin")
 public class ArenaAddKitCommand {
 
     public void execute(Player player, @CPL("arena") Arena arena, @CPL("kit") Kit kit) {

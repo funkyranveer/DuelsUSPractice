@@ -13,9 +13,8 @@ public class PartyBanCommand
 {
     public void execute(final Player player, @CPL("player") final Player target) {
         final Profile profile = Profile.getByUuid(player.getUniqueId());
-        if (!player.hasPermission("liquidpractice.donator")) {
+        if (!player.hasPermission("practice.donator")) {
             player.sendMessage(CC.translate("&7You do not have permission to use Party Settings."));
-            player.sendMessage(CC.translate("&7&oPlease consider buying a Rank at &b&ostore.purgemc.club &7!"));
             return;
         }
         if (profile.getParty() == null) {

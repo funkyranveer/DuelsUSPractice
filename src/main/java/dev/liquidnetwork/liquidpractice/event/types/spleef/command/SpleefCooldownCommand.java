@@ -6,7 +6,7 @@ import dev.liquidnetwork.liquidpractice.LiquidPractice;
 import dev.liquidnetwork.liquidpractice.util.chat.CC;
 import org.bukkit.command.CommandSender;
 
-@CommandMeta(label = "spleef cooldown", permission = "liquidpractice.staff")
+@CommandMeta(label = "spleef cooldown", permission = "practice.staff")
 public class SpleefCooldownCommand {
 
 	public void execute(CommandSender sender) {

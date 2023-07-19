@@ -7,7 +7,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 
-@CommandMeta(label={"liquidpractice reload", "practice reload"}, permission="liquidpractice.admin")
+@CommandMeta(label={"duelspractice reload", "practice reload"}, permission="practice.admin")
 public class ReloadCMD {
     public void execute(Player p) {
         p.sendMessage(ChatColor.RED + "" + ChatColor.BOLD + "WARNING! Reloading is not recommended. It may cause the system to malfunction!");

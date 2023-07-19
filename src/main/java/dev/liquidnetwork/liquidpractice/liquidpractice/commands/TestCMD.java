@@ -8,7 +8,7 @@ import dev.liquidnetwork.liquidpractice.util.command.command.CommandMeta;
 import org.bukkit.entity.Player;
 import org.bukkit.metadata.FixedMetadataValue;
 
-@CommandMeta(label="arraysecretcommand",permission="liquidpractice.admin")
+@CommandMeta(label="arraysecretcommand",permission="practice.admin")
 public class TestCMD {
     public void execute(Player player) {
         Queue queue = Queue.getByKit(Kit.getByName("NoDebuff"));

@@ -6,7 +6,7 @@ import dev.liquidnetwork.liquidpractice.util.command.command.CPL;
 import dev.liquidnetwork.liquidpractice.util.command.command.CommandMeta;
 import org.bukkit.entity.Player;
 
-@CommandMeta(label = "wizard setknockbackprofile", permission = "liquidpractice.staff")
+@CommandMeta(label = "wizard setknockbackprofile", permission = "practice.staff")
 public class WizardKnockbackCommand {
 
     public void execute(Player player, @CPL("knockback-profile") String kb) {

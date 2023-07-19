@@ -10,7 +10,7 @@ import dev.liquidnetwork.liquidpractice.util.command.command.CommandMeta;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
 
-@CommandMeta(label = "arena create", permission = "liquidpractice.admin")
+@CommandMeta(label = "arena create", permission = "practice.admin")
 public class ArenaCreateCommand {
 
     public void execute(Player player, @CPL("name") String name, @CPL("[shared|standalone|bridge]") String type) {

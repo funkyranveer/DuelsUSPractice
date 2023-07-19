@@ -5,7 +5,7 @@ import dev.liquidnetwork.liquidpractice.util.command.command.CommandMeta;
 import dev.liquidnetwork.liquidpractice.util.chat.CC;
 import org.bukkit.entity.Player;
 
-@CommandMeta(label = "brackets tp", permission = "liquidpractice.staff")
+@CommandMeta(label = "brackets tp", permission = "practice.staff")
 public class BracketsTpCommand {
 
 	public void execute(Player player) {

@@ -7,7 +7,7 @@ import dev.liquidnetwork.liquidpractice.util.command.command.CommandMeta;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
 
-@CommandMeta(label = "arena setspawn", permission = "liquidpractice.admin")
+@CommandMeta(label = "arena setspawn", permission = "practice.admin")
 public class ArenaSetSpawnCommand {
 
     public void execute(Player player, @CPL("arena") Arena arena, @CPL("[1|2]") Integer pos) {

@@ -5,7 +5,7 @@ import dev.liquidnetwork.liquidpractice.util.command.command.CommandMeta;
 import dev.liquidnetwork.liquidpractice.util.chat.CC;
 import org.bukkit.entity.Player;
 
-@CommandMeta(label = "parkour setspawn", permission = "liquidpractice.staff")
+@CommandMeta(label = "parkour setspawn", permission = "practice.staff")
 public class ParkourSetSpawnCommand {
 
 	public void execute(Player player) {

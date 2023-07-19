@@ -5,7 +5,7 @@ import dev.liquidnetwork.liquidpractice.util.chat.CC;
 import dev.liquidnetwork.liquidpractice.util.command.command.CommandMeta;
 import org.bukkit.entity.Player;
 
-@CommandMeta(label = { "hcf", "liquidpractice hcf", "hcf help"}, permission="liquidpractice.admin")
+@CommandMeta(label = { "hcf", "practice hcf", "hcf help"}, permission="practice.admin")
 public class HCFCMD {
     public void execute(final Player player) {
         if (LiquidPractice.getInstance().getMainConfig().getBoolean("LiquidPractice.HCF-Enabled")) {

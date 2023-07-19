@@ -16,7 +16,7 @@ import org.bukkit.inventory.ItemStack;
 import java.util.HashMap;
 import java.util.Map;
 
-@CommandMeta(label = {"worlds","world"}, permission = "liquidpractice.staff")
+@CommandMeta(label = {"worlds","world"}, permission = "practice.staff")
 public class WorldCMD {
     public void execute(Player player) {
         new WorldMenu().openMenu(player);

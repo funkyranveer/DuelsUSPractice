@@ -6,7 +6,7 @@ import dev.liquidnetwork.liquidpractice.util.external.Cooldown;
 import dev.liquidnetwork.liquidpractice.util.command.command.CommandMeta;
 import org.bukkit.command.CommandSender;
 
-@CommandMeta(label = "OITC cooldown", permission = "liquidPractice.oitc")
+@CommandMeta(label = "OITC cooldown", permission = "Practice.oitc")
 public class OITCCooldownCommand {
 
     public void execute(CommandSender sender) {

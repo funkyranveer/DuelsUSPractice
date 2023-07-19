@@ -146,14 +146,14 @@ public class SettingsMenu extends Menu
                     break;
 
                 case TOGGLEPINGFACTOR:
-                if (player.hasPermission("liquidpractice.donator")) {
+                if (player.hasPermission("practice.donator")) {
                     Button.playSuccess(player);
                     profile.getSettings().setUsingPingFactor(!profile.getSettings().isUsingPingFactor());
                 } else {
                     Button.playFail(player);
                     player.closeInventory();
                     player.sendMessage(CC.translate("&7You do not have permission to use this setting."));
-                    player.sendMessage(CC.translate("&7&oPlease consider upgrading your Rank at &b&ostore.purgemc.club &7!"));
+                    player.sendMessage(CC.translate("&7&oPlease consider upgrading your Rank at&b&o " + LiquidPractice.getInstance().getConfig().getString("LINKS.STORE")));
                 }
                     break;
                 case TOGGLESPECTATORS:
@@ -161,7 +161,7 @@ public class SettingsMenu extends Menu
                     profile.getSettings().setAllowSpectators(!profile.getSettings().isAllowSpectators());
                     break;
                 case TOGGLELIGHTNING:
-                if (player.hasPermission("liquidpractice.donator")) {
+                if (player.hasPermission("practice.donator")) {
                     Button.playSuccess(player);
                     profile.getSettings().setLightning(!profile.getSettings().isLightning());
                 } else {

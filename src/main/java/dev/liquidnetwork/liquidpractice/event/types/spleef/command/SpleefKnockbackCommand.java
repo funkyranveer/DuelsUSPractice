@@ -6,7 +6,7 @@ import dev.liquidnetwork.liquidpractice.LiquidPractice;
 import dev.liquidnetwork.liquidpractice.util.chat.CC;
 import org.bukkit.entity.Player;
 
-@CommandMeta(label = "spleef setknockbackprofile", permission = "liquidpractice.staff")
+@CommandMeta(label = "spleef setknockbackprofile", permission = "practice.staff")
 public class SpleefKnockbackCommand {
 
     public void execute(Player player, @CPL("knockback-profile") String kb) {

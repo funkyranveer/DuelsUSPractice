@@ -5,7 +5,7 @@ import dev.liquidnetwork.liquidpractice.util.chat.CC;
 import dev.liquidnetwork.liquidpractice.util.command.command.CommandMeta;
 import org.bukkit.command.CommandSender;
 
-@CommandMeta(label = "oitc cancel", permission = "liquidPractice.oitc")
+@CommandMeta(label = "oitc cancel", permission = "Practice.oitc")
 public class OITCCancelCommand {
 
     public void execute(CommandSender sender) {

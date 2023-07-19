@@ -6,7 +6,7 @@ import dev.liquidnetwork.liquidpractice.util.command.command.CPL;
 import dev.liquidnetwork.liquidpractice.util.command.command.CommandMeta;
 import org.bukkit.entity.Player;
 
-@CommandMeta(label="arena disablepearls", permission="liquidpractice.admin")
+@CommandMeta(label="arena disablepearls", permission="practice.admin")
 public class ArenaDisablePearlsCommand {
     public void execute(Player player, @CPL("arena") Arena arena) {
         if (arena == null) {

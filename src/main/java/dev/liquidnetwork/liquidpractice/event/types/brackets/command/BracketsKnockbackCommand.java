@@ -6,7 +6,7 @@ import dev.liquidnetwork.liquidpractice.util.command.command.CommandMeta;
 import dev.liquidnetwork.liquidpractice.util.chat.CC;
 import org.bukkit.entity.Player;
 
-@CommandMeta(label = "brackets setknockbackprofile", permission = "liquidpractice.staff")
+@CommandMeta(label = "brackets setknockbackprofile", permission = "practice.staff")
 public class BracketsKnockbackCommand {
 
     public void execute(Player player, @CPL("knockback-profile") String kb) {

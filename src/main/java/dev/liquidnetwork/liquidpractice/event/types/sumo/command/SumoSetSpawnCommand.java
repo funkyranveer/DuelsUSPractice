@@ -6,7 +6,7 @@ import dev.liquidnetwork.liquidpractice.util.command.command.CPL;
 import dev.liquidnetwork.liquidpractice.util.command.command.CommandMeta;
 import org.bukkit.entity.Player;
 
-@CommandMeta(label = "sumo setspawn", permission = "liquidpractice.staff")
+@CommandMeta(label = "sumo setspawn", permission = "practice.staff")
 public class SumoSetSpawnCommand {
 
 	public void execute(Player player, @CPL("[one|two|spec]") String position) {

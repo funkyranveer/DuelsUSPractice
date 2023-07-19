@@ -6,7 +6,7 @@ import dev.liquidnetwork.liquidpractice.util.command.command.CPL;
 import dev.liquidnetwork.liquidpractice.util.command.command.CommandMeta;
 import org.bukkit.entity.Player;
 
-@CommandMeta(label="kit enable", permission = "liquidpractice.admin")
+@CommandMeta(label="kit enable", permission = "practice.admin")
 public class KitEnableCommand {
     public void execute(Player player, @CPL("kit") String kit) {
          Kit kits = Kit.getByName(kit);

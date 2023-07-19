@@ -7,7 +7,7 @@ import dev.liquidnetwork.liquidpractice.util.command.command.CommandMeta;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
-@CommandMeta(label={"kit seticon"}, permission = "liquidpractice.admin")
+@CommandMeta(label={"kit seticon"}, permission = "practice.admin")
 public class KitSetIconCommand {
     public void execute(Player player, @CPL("kit") Kit kit) {
         ItemStack item=player.getItemInHand();

@@ -6,7 +6,7 @@ import dev.liquidnetwork.liquidpractice.util.chat.CC;
 import dev.liquidnetwork.liquidpractice.util.command.command.CommandMeta;
 import org.bukkit.command.CommandSender;
 
-@CommandMeta(label = "wizard cooldown", permission = "liquidpractice.staff")
+@CommandMeta(label = "wizard cooldown", permission = "practice.staff")
 public class WizardCooldownCommand {
 
 	public void execute(CommandSender sender) {

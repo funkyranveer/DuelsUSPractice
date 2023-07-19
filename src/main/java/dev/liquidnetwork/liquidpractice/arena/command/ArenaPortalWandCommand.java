@@ -5,7 +5,7 @@ import dev.liquidnetwork.liquidpractice.util.chat.CC;
 import dev.liquidnetwork.liquidpractice.util.command.command.CommandMeta;
 import org.bukkit.entity.Player;
 
-@CommandMeta(label = {"arena wand", "arena portalwand", "arena selection", "arena portal"}, permission = "liquidpractice.admin")
+@CommandMeta(label = {"arena wand", "arena portalwand", "arena selection", "arena portal"}, permission = "practice.admin")
 public class ArenaPortalWandCommand {
     public void execute(Player player) {
         if (player.getInventory().first(Selection.SELECTION_WAND) != -1) {

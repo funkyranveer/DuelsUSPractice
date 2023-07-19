@@ -6,7 +6,7 @@ import dev.liquidnetwork.liquidpractice.util.command.command.CPL;
 import dev.liquidnetwork.liquidpractice.util.command.command.CommandMeta;
 import org.bukkit.entity.Player;
 
-@CommandMeta(label={"kit sumo"}, permission = "liquidpractice.admin")
+@CommandMeta(label={"kit sumo"}, permission = "practice.admin")
 public class KitSumoCommand {
     public void execute(Player player, @CPL("kit") Kit kit) {
         if (kit == null) {

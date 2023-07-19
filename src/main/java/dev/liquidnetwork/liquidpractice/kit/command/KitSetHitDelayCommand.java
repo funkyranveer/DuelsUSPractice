@@ -6,7 +6,7 @@ import dev.liquidnetwork.liquidpractice.util.command.command.CPL;
 import dev.liquidnetwork.liquidpractice.util.command.command.CommandMeta;
 import org.bukkit.entity.Player;
 
-@CommandMeta(label="kit hitdelay", permission = "liquidpractice.admin")
+@CommandMeta(label="kit hitdelay", permission = "practice.admin")
 public class KitSetHitDelayCommand {
     public void execute(Player player, @CPL("kit") Kit kit, @CPL("delay") int delay) {
         if (kit == null) {

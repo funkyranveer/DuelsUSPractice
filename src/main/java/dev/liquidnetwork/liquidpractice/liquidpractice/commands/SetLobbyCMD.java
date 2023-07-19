@@ -5,7 +5,7 @@ import dev.liquidnetwork.liquidpractice.util.chat.CC;
 import dev.liquidnetwork.liquidpractice.util.command.command.CommandMeta;
 import org.bukkit.entity.Player;
 
-@CommandMeta(label={"liquidpractice setlobby", "liquidpractice setspawn"}, permission="liquidpractice.admin")
+@CommandMeta(label={"practice setlobby", "practice setspawn"}, permission="practice.admin")
 public class SetLobbyCMD {
     public void execute(Player player) {
         Essentials.setSpawn(player.getLocation());

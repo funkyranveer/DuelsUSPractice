@@ -7,7 +7,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 
-@CommandMeta(label={"liquidpractice ver", "liquidpractice version"})
+@CommandMeta(label={"practice ver", "practice version"})
 public class VersionCMD {
     public void execute(Player p) {
         p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&b&m--------&7&m" + StringUtils.repeat("-", 37) + "&b&m--------"));

@@ -9,7 +9,7 @@ import dev.liquidnetwork.liquidpractice.util.command.command.CPL;
 import dev.liquidnetwork.liquidpractice.util.command.command.CommandMeta;
 import org.bukkit.entity.Player;
 
-@CommandMeta(label = "arena setportal", permission = "liquidpractice.admin")
+@CommandMeta(label = "arena setportal", permission = "practice.admin")
 public class ArenaSetPortalCommand {
     public void execute(Player player,@CPL("arena") String arena, @CPL("[blue|red]") String color) {
       if (!color.equals("blue") && !color.equals("red")) {

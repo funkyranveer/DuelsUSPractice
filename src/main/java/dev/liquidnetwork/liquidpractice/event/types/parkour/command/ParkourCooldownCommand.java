@@ -6,7 +6,7 @@ import dev.liquidnetwork.liquidpractice.util.command.command.CommandMeta;
 import dev.liquidnetwork.liquidpractice.util.chat.CC;
 import org.bukkit.command.CommandSender;
 
-@CommandMeta(label = "parkour cooldown", permission = "liquidpractice.staff")
+@CommandMeta(label = "parkour cooldown", permission = "practice.staff")
 public class ParkourCooldownCommand {
 
 	public void execute(CommandSender sender) {

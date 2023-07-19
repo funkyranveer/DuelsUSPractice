@@ -5,7 +5,7 @@ import dev.liquidnetwork.liquidpractice.util.command.command.CommandMeta;
 import dev.liquidnetwork.liquidpractice.util.chat.Color;
 import org.bukkit.entity.Player;
 
-@CommandMeta(label = {"ffa", "ffa help", "lms", "lms help"}, permission = "liquidpractice.admin")
+@CommandMeta(label = {"ffa", "ffa help", "lms", "lms help"}, permission = "practice.admin")
 public class LMSHelpCommand {
 
     public void execute(Player player) {

@@ -7,7 +7,7 @@ import dev.liquidnetwork.liquidpractice.util.command.command.CommandMeta;
 import dev.liquidnetwork.liquidpractice.kit.Kit;
 import org.bukkit.entity.Player;
 
-@CommandMeta(label={"liquidpractice save ", "liquidpractice update"}, permission="liquidpractice.admin")
+@CommandMeta(label={"practice save ", "practice update"}, permission="practice.admin")
 public class SaveCMD {
     public void execute(Player p) {
         Profile.getProfiles().values().forEach(Profile::save);

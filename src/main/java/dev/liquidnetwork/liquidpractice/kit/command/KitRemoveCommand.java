@@ -6,7 +6,7 @@ import dev.liquidnetwork.liquidpractice.util.command.command.CPL;
 import dev.liquidnetwork.liquidpractice.util.command.command.CommandMeta;
 import org.bukkit.entity.Player;
 
-@CommandMeta(label = {"kit remove", "kit delete"}, permission = "liquidpractice.admin")
+@CommandMeta(label = {"kit remove", "kit delete"}, permission = "practice.admin")
 public class KitRemoveCommand {
     public void execute(final Player player, @CPL("name") final String name) {
         if (name == null) {

@@ -7,7 +7,7 @@ import dev.liquidnetwork.liquidpractice.util.command.command.CommandMeta;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 
-@CommandMeta(label={"arena reload", "arenas reload"}, permission="liquidpractice.admin")
+@CommandMeta(label={"arena reload", "arenas reload"}, permission="practice.admin")
 public class ArenaReloadCommand {
     public void execute(Player player) {
         player.sendMessage(ChatColor.RED + "" + ChatColor.BOLD + "WARNING! Reloading is not recommended. It may cause the system to malfunction!");

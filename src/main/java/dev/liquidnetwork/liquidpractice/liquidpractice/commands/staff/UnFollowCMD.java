@@ -5,7 +5,7 @@ import dev.liquidnetwork.liquidpractice.util.chat.CC;
 import dev.liquidnetwork.liquidpractice.util.command.command.CommandMeta;
 import org.bukkit.entity.*;
 
-@CommandMeta(label = { "unfollow" }, permission = "liquidpractice.staff")
+@CommandMeta(label = { "unfollow" }, permission = "practice.staff")
 public class UnFollowCMD
 {
     public void execute(final Player player) {

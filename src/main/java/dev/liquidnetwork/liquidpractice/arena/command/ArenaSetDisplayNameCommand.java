@@ -6,7 +6,7 @@ import dev.liquidnetwork.liquidpractice.util.command.command.CPL;
 import dev.liquidnetwork.liquidpractice.util.command.command.CommandMeta;
 import org.bukkit.entity.Player;
 
-@CommandMeta(label = "arena setdisplayname", permission = "liquidpractice.admin")
+@CommandMeta(label = "arena setdisplayname", permission = "practice.admin")
 public class ArenaSetDisplayNameCommand {
      public void execute(Player player, @CPL("arena") String arenaname, @CPL("displayname") String displayname) {
          Arena arena = Arena.getByName(arenaname);

@@ -6,7 +6,7 @@ import dev.liquidnetwork.liquidpractice.util.command.command.CommandMeta;
 import dev.liquidnetwork.liquidpractice.util.chat.CC;
 import org.bukkit.command.CommandSender;
 
-@CommandMeta(label = "brackets cooldown", permission = "liquidpractice.staff")
+@CommandMeta(label = "brackets cooldown", permission = "practice.staff")
 public class BracketsCooldownCommand {
 
 	public void execute(CommandSender sender) {

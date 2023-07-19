@@ -6,7 +6,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 
-@CommandMeta(label = { "arena", "arenahelp" }, permission = "liquidpractice.admin")
+@CommandMeta(label = { "arena", "arenahelp" }, permission = "practice.admin")
 public class ArenaCommand {
     public void execute(final CommandSender player) {
         player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&b&m--------&7&m" + StringUtils.repeat("-", 37) + "&b&m--------"));

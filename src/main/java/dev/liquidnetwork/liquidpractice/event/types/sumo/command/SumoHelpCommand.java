@@ -5,7 +5,7 @@ import dev.liquidnetwork.liquidpractice.util.chat.Color;
 import dev.liquidnetwork.liquidpractice.util.command.command.CommandMeta;
 import org.bukkit.entity.Player;
 
-@CommandMeta(label = {"sumo", "sumo help"}, permission = "liquidpractice.admin")
+@CommandMeta(label = {"sumo", "sumo help"}, permission = "practice.admin")
 public class SumoHelpCommand {
 
     public void execute(Player player) {

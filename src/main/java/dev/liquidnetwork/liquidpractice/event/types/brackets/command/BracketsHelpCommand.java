@@ -5,7 +5,7 @@ import dev.liquidnetwork.liquidpractice.util.chat.Color;
 import dev.liquidnetwork.liquidpractice.util.command.command.CommandMeta;
 import org.bukkit.entity.Player;
 
-@CommandMeta(label = {"brackets", "brackets help"}, permission = "liquidpractice.admin")
+@CommandMeta(label = {"brackets", "brackets help"}, permission = "practice.admin")
 public class BracketsHelpCommand {
 
     public void execute(Player player) {

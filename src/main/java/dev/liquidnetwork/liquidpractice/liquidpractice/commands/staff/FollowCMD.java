@@ -8,7 +8,7 @@ import dev.liquidnetwork.liquidpractice.util.command.command.CommandMeta;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 
-@CommandMeta(label = {"follow"}, permission = "liquidpractice.staff")
+@CommandMeta(label = {"follow"}, permission = "practice.staff")
 public class FollowCMD {
     public void execute(final Player player, @CPL("player") final Player target) {
         final Profile profile = Profile.getByUuid(player.getUniqueId());

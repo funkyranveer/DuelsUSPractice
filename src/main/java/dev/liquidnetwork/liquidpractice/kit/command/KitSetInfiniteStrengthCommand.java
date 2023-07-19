@@ -6,7 +6,7 @@ import dev.liquidnetwork.liquidpractice.util.command.command.CPL;
 import dev.liquidnetwork.liquidpractice.util.command.command.CommandMeta;
 import org.bukkit.entity.Player;
 
-@CommandMeta(label={"kit infinitestrength"}, permission = "liquidpractice.admin")
+@CommandMeta(label={"kit infinitestrength"}, permission = "practice.admin")
 public class KitSetInfiniteStrengthCommand {
     public void execute(Player player, @CPL("kit") Kit kit) {
         if (kit == null) {

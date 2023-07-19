@@ -6,7 +6,7 @@ import dev.liquidnetwork.liquidpractice.util.command.command.CPL;
 import dev.liquidnetwork.liquidpractice.util.command.command.CommandMeta;
 import org.bukkit.entity.Player;
 
-@CommandMeta(label = "silent", permission = "liquidpractice.staff")
+@CommandMeta(label = "silent", permission = "practice.staff")
 public class SilentCMD {
 
 

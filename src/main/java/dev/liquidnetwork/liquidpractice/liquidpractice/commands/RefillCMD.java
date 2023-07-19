@@ -7,7 +7,7 @@ import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
-@CommandMeta(label = {"refill", "more"}, permission = "liquidpractice.staff")
+@CommandMeta(label = {"refill", "more"}, permission = "practice.staff")
 public class RefillCMD {
     public void execute(Player player) {
         Profile profile = Profile.getByUuid(player);

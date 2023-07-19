@@ -5,7 +5,7 @@ import dev.liquidnetwork.liquidpractice.util.chat.Color;
 import dev.liquidnetwork.liquidpractice.util.command.command.CommandMeta;
 import org.bukkit.entity.Player;
 
-@CommandMeta(label = {"spleef", "spleef help"}, permission = "liquidpractice.admin")
+@CommandMeta(label = {"spleef", "spleef help"}, permission = "practice.admin")
 public class SpleefHelpCommand {
 
     public void execute(Player player) {

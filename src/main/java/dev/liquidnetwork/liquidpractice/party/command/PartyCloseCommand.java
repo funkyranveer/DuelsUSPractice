@@ -13,7 +13,7 @@ public class PartyCloseCommand
 {
     public void execute(final Player player) {
         final Profile profile = Profile.getByUuid(player.getUniqueId());
-        if (!player.hasPermission("liquidpractice.donator")) {
+        if (!player.hasPermission("practice.donator")) {
             player.sendMessage(CC.translate("&7You do not have permission to use Party Settings."));
             return;
         }

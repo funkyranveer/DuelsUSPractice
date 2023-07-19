@@ -5,7 +5,7 @@ import dev.liquidnetwork.liquidpractice.util.command.command.CommandMeta;
 import dev.liquidnetwork.liquidpractice.util.chat.Color;
 import org.bukkit.entity.Player;
 
-@CommandMeta(label = {"parkour", "parkour help"}, permission = "liquidpractice.admin")
+@CommandMeta(label = {"parkour", "parkour help"}, permission = "practice.admin")
 public class ParkourHelpCommand {
 
     public void execute(Player player) {

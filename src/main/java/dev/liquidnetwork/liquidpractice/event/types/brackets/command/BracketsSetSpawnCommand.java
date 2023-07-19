@@ -6,7 +6,7 @@ import dev.liquidnetwork.liquidpractice.util.command.command.CommandMeta;
 import dev.liquidnetwork.liquidpractice.util.chat.CC;
 import org.bukkit.entity.Player;
 
-@CommandMeta(label = "brackets setspawn", permission = "liquidpractice.staff")
+@CommandMeta(label = "brackets setspawn", permission = "practice.staff")
 public class BracketsSetSpawnCommand {
 
 	public void execute(Player player, @CPL("[one|two|spec]") String position) {

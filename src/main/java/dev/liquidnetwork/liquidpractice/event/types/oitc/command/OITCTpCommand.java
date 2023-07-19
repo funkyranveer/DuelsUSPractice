@@ -5,7 +5,7 @@ import dev.liquidnetwork.liquidpractice.util.chat.CC;
 import dev.liquidnetwork.liquidpractice.util.command.command.CommandMeta;
 import org.bukkit.entity.Player;
 
-@CommandMeta(label = "OITC tp", permission = "liquidPractice.oitc")
+@CommandMeta(label = "OITC tp", permission = "Practice.oitc")
 public class OITCTpCommand {
 
     public void execute(Player player) {

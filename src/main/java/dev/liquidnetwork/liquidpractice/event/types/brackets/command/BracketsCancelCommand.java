@@ -5,7 +5,7 @@ import dev.liquidnetwork.liquidpractice.util.command.command.CommandMeta;
 import dev.liquidnetwork.liquidpractice.util.chat.CC;
 import org.bukkit.command.CommandSender;
 
-@CommandMeta(label = "brackets cancel", permission = "liquidpractice.staff")
+@CommandMeta(label = "brackets cancel", permission = "practice.staff")
 public class BracketsCancelCommand {
 
 	public void execute(CommandSender sender) {

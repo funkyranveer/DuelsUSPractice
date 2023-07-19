@@ -6,7 +6,7 @@ import dev.liquidnetwork.liquidpractice.util.chat.CC;
 import dev.liquidnetwork.liquidpractice.util.command.command.CommandMeta;
 import org.bukkit.entity.Player;
 
-@CommandMeta(label= {"spawn", "liquidpractice spawn"}, permission = "liquidpractice.staff")
+@CommandMeta(label= {"spawn", "practice spawn"}, permission = "practice.staff")
 public class SpawnCMD {
     public void execute(Player player) {
         Profile profile = Profile.getByUuid(player.getUniqueId());

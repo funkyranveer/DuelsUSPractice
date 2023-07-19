@@ -5,7 +5,7 @@ import dev.liquidnetwork.liquidpractice.util.chat.Color;
 import dev.liquidnetwork.liquidpractice.util.command.command.CommandMeta;
 import org.bukkit.entity.Player;
 
-@CommandMeta(label = {"ffa", "ffa help", "OITC", "OITC help"}, permission = "liquidpractice.admin")
+@CommandMeta(label = {"ffa", "ffa help", "OITC", "OITC help"}, permission = "practice.admin")
 public class OITCHelpCommand {
 
     public void execute(Player player) {

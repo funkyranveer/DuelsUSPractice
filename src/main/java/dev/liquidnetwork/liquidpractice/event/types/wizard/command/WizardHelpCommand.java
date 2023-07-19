@@ -5,7 +5,7 @@ import dev.liquidnetwork.liquidpractice.util.chat.Color;
 import dev.liquidnetwork.liquidpractice.util.command.command.CommandMeta;
 import org.bukkit.entity.Player;
 
-@CommandMeta(label = {"wizard", "wizard help"}, permission = "liquidpractice.admin")
+@CommandMeta(label = {"wizard", "wizard help"}, permission = "practice.admin")
 public class WizardHelpCommand {
 
     public void execute(Player player) {

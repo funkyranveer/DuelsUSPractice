@@ -6,7 +6,7 @@ import dev.liquidnetwork.liquidpractice.util.command.command.CPL;
 import dev.liquidnetwork.liquidpractice.util.command.command.CommandMeta;
 import org.bukkit.entity.Player;
 
-@CommandMeta(label = "sumo setknockbackprofile", permission = "liquidpractice.staff")
+@CommandMeta(label = "sumo setknockbackprofile", permission = "practice.staff")
 public class SumoKnockbackCommand {
 
     public void execute(Player player, @CPL("knockback-profile") String kb) {

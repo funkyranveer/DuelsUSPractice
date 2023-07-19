@@ -9,7 +9,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
-@CommandMeta(label={"liquidpractice rename"}, permission="liquidpractice.admin")
+@CommandMeta(label={"practice rename"}, permission="practice.admin")
 public class RenameCMD {
     public void execute(Player p, @CPL("name") String name) {
         if (p.getItemInHand() == null || p.getItemInHand().getType().equals(Material.AIR)) {
