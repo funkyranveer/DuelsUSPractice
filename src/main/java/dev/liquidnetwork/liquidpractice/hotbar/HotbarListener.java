@@ -325,20 +325,11 @@ public class HotbarListener implements Listener {
             }
         }
     }
+}
 
     /*
      * Testing
      */
 
-    @EventHandler
-    public void onClickInv(InventoryClickEvent event) {
-        if (Profile.getByUuid(event.getWhoClicked().getUniqueId()).getState() == ProfileState.IN_LOBBY) {
-            event.setCancelled(true); }
-        else {
-            if (Profile.getByUuid(event.getWhoClicked().getUniqueId()).getState() == ProfileState.IN_QUEUE) {
-                event.setCancelled(false);
-            }
-        }
-    }
-}
+
 

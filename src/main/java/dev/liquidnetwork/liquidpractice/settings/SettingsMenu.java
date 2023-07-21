@@ -32,9 +32,8 @@ public class SettingsMenu extends Menu
         buttons.put(3, new SettingsButton(SettingsType.TOGGLESHOWPLAYERS));
         buttons.put(4, new SettingsButton(SettingsType.TOGGLEDUELREQUESTS));
         buttons.put(5, new SettingsButton(SettingsType.TOGGLETOURNAMENTMESSAGES));
-        buttons.put(6, new SettingsButton(SettingsType.TOGGLEVANILLATAB));
-        buttons.put(7, new SettingsButton(SettingsType.TOGGLEPINGFACTOR));
-        buttons.put(8, new SettingsButton(SettingsType.TOGGLELIGHTNING));
+        buttons.put(6, new SettingsButton(SettingsType.TOGGLEPINGFACTOR));
+        buttons.put(7, new SettingsButton(SettingsType.TOGGLELIGHTNING));
         return buttons;
     }
 
@@ -74,7 +73,7 @@ public class SettingsMenu extends Menu
                         lines.add("&7players of similar ping as you.");
                         lines.add("");
                         lines.add("&7This Option is Donator only!");
-                        lines.add("&7Please Upgrade your rank at &bstore.purgemc.club.");
+                        lines.add("&7&oPlease consider upgrading your Rank at&b&o " + LiquidPractice.getInstance().getConfig().getString("LINKS.STORE"));
                     }
                     break;
                 case TOGGLESPECTATORS:
@@ -96,7 +95,7 @@ public class SettingsMenu extends Menu
                         lines.add("&7Death effect for your Profile.");
                         lines.add("");
                         lines.add("&7This Option is Donator only!");
-                        lines.add("&7Please Upgrade your rank at &bstore.purgemc.club.");
+                        lines.add("&7&oPlease consider upgrading your Rank at&b&o " + LiquidPractice.getInstance().getConfig().getString("LINKS.STORE"));
                     }
                     break;
                 case TOGGLEPINGONSCOREBOARD:
@@ -112,13 +111,6 @@ public class SettingsMenu extends Menu
                     lines.add("");
                     lines.add((profile.getSettings().isAllowTournamentMessages() ? "&a&l■ " : "&8&l■ ") + "&fShow Tournament Messages");
                     lines.add((!profile.getSettings().isAllowTournamentMessages() ? "&a&l■ " : "&8&l■ ") + "&fDon't Show Tournament Messages");
-                    break;
-                case TOGGLEVANILLATAB:
-                    lines.add("&7Toggle through different");
-                    lines.add("&7Tab Styles for your profile");
-                    lines.add("");
-                    lines.add((profile.getSettings().isVanillaTab() ? "&a&l■ " : "&8&l■ ") + "&fShow Vanilla Tab");
-                    lines.add((!profile.getSettings().isVanillaTab() ? "&a&l■ " : "&8&l■ ") + "&fShow Default Tab");
                     break;
                 case TOGGLESHOWPLAYERS:
                     lines.add("&7Toggle player visibility");
@@ -178,10 +170,6 @@ public class SettingsMenu extends Menu
                 case TOGGLETOURNAMENTMESSAGES:
                     Button.playSuccess(player);
                     profile.getSettings().setAllowTournamentMessages(!profile.getSettings().isAllowTournamentMessages());
-                    break;
-                case TOGGLEVANILLATAB:
-                    Button.playSuccess(player);
-                    profile.getSettings().setVanillaTab(!profile.getSettings().isVanillaTab());
                     break;
                 case TOGGLESHOWPLAYERS:
                     Button.playSuccess(player);
